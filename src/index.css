@@ -5,9 +5,214 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #f5f5f5;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+/****************************/
+/*          Home            */
+/****************************/
+
+.home-screen{
+  background-color: #ff6709;
+  position: absolute;
+  top: 0px; /* Header Height */
+  bottom: 0px; /* Footer Height */
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.home-screen .set{
+  margin: auto;
+  text-align: center;
+}
+.home-screen .logo img{
+  width: 360px;
+}
+.home-screen .shop-button:hover{
+  color: #616161;
+}
+.home-screen .shop-button{
+  top: 65%;
+  color: black;
+}
+
+
+/****************************/
+/*         Top Bar          */
+/****************************/
+
+.top-bar{
+  top: 0;
+  height: 50px;
+  width: 100%;
+  background-color: #ff6709;
+  z-index: 99;
+  position: fixed;
+
+}
+.top-bar.fixed {
+  position: fixed;
+  top: 0;
+  width: 100%
+}
+.top-bar + div {
+  padding-top: 50px;
+}
+.top-bar .left-side{
+  margin: 10px 20px;
+  display:inline-block;
+  width:30%;
+  text-align: left;
+}
+.top-bar .left-side .logo img{
+  width: 20px;
+  cursor: pointer;
+}
+.top-bar .center-side{
+  display:inline-block;
+  width:30%;
+  text-align: center;
+}
+.top-bar .right-side{
+  margin: 10px 0;
+  display:inline-block;
+  width:36%;
+  text-align: right;
+}
+.top-bar .right-side .cart span{
+  display: inline-block;
+  width: 30px;
+}
+
+/****************************/
+/*          Catalog         */
+/****************************/
+
+.store .catalog{
+  margin: auto;
+  width: 76%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.store .catalog .product-card{
+  text-align: center;
+  margin: 5px;
+  padding: 5px;
+  background-color: white;
+  border-radius: 2%;
+  width: 300px;
+  height: 450px;
+}
+
+.store .catalog .product-card .product-title{
+  font-size: large;
+  font-weight: bold;
+}
+.store .catalog .product-card .product-price{
+  font-size: medium;
+}
+
+.store .catalog .product-card img{
+  width: 300px;
+  cursor: pointer;
+}
+
+
+
+
+/****************************/
+/*      Product Info        */
+/****************************/
+
+.product-info-page .product-info{
+  /*display: inline-block;*/
+  column-count: 2;
+  margin: 20px;
+  padding: 0 50px;
+}
+
+
+.product-info-page .product-info .left-content .main-image img{
+  width: 500px;
+  background-color: white;
+  border-radius: 2%;
+}
+
+.product-info-page .product-info .right-content{
+  padding-top: 20px;
+  text-align: center;
+}
+.product-info-page .product-info .right-content h3{
+  font-size: xx-large;
+}
+
+
+/****************************/
+/*         Checkout         */
+/****************************/
+
+
+.checkout-page {
+  width: 100%;
+}
+
+.checkout-page .left-side{
+  width: 65%;
+  display: inline-block;
+  padding: 0 0 0 25px;
+}
+.checkout-page .left-side .product-list{
+  display: grid;
+}
+.checkout-page .left-side .product-list .product-card{
+  margin: 10px 15px;
+  padding: 15px;
+  background-color: white;
+  display: grid;
+  align-items: center;
+}
+.checkout-page .left-side .product-list .product-card p{
+  font-size: larger;
+}
+.checkout-page .left-side .product-list .product-card img{
+  width: 150px;
+}
+.checkout-page .left-side .product-list .product-card .product-title{
+  width: 250px;
+}
+.checkout-page .left-side .product-list .product-card .product-price{
+  grid-column: 6;
+}
+.checkout-page .left-side .product-list .product-card .product-quantity{
+  grid-column: 7;
+}
+.checkout-page .left-side .product-list .product-card .card-action{
+  grid-column: 8;
+}
+.checkout-page .left-side .product-list .product-card .card-action Button{
+  margin: 0 5px;
+}
+
+.checkout-page .right-side{
+  width: 28%;
+  display: inline-block;
+  padding: 0 15px;
+}
+.checkout-page .right-side.sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 55px;
+}
+.checkout-page .right-side .checkout-info div{
+  line-height: 23px;
+}
+
+.checkout-page .right-side .checkout-info .discount-price button{
+  margin-left: 10px;
 }
