@@ -1,4 +1,5 @@
-# Xiaomi Store with ReactJS
+# Xiaomi Store
+Xiaomi web store replica. HTML - React
 
 [Demo](https://shengz94.github.io/shopping-cart/)
 
