@@ -1,6 +1,6 @@
 # Xiaomi Store with ReactJS
 
-Demo [Link](https://shengz94.github.io/shopping-cart/)
+[Demo](https://shengz94.github.io/shopping-cart/)
 
 ## Main pages
 
